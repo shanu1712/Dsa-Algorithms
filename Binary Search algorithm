@@ -1,0 +1,31 @@
+// binary search//
+
+function binarySearch(arr,target,start,end){
+ let mid= Math.floor((start+end)/2);
+  // three conditions //
+  
+  //base condition//
+  if(arr[mid]==target){
+    return mid;
+  }
+  
+  //second condition//
+
+  if(arr[mid]>target){
+    end=mid-1;
+    return binarySearch(arr,target,start,end)
+    //we have to call a function so that we can reach the base condition easily
+  }
+  //third condition//
+  if(arr[mid]<target){
+    start=mid+1;
+   return binarySearch(arr,target,start,end)
+    // so that we can reach the base condition easily
+  }
+  else{
+    return -1;
+  }
+
+}
+
+console.log(binarySearch([1,2,3,4,5,66,77,88],66,0,7))
