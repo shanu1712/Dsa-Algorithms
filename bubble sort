@@ -1,4 +1,5 @@
 /// bubblesort//
+/// just a simple concept that we will select the largest bubble or largest value and move at the end of the array like chote bubbles neeche hote hain and bade bubbles upar hote hai
 
 const arr=[1,34,54,32,45,78,14,33];
 
