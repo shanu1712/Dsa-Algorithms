@@ -1,0 +1,21 @@
+///////////////////
+
+function selectionSort(arr){
+  
+  for(let i=0;i<arr.length;i++){
+    let min=i;
+    for(let j=i+1;j<arr.length;j++){
+      if(arr[j]<arr[min]){
+        min=j;
+      }
+    }
+    ///swap here//
+    let temp=arr[i];
+    arr[i]=arr[min];
+    arr[min]=temp;
+ //return arr          // it will give wrong results if we will return it from here as return value is always where the function is almost ending 
+  }
+  return arr;  
+  
+}
+console.log(selectionSort([34,15,67,45,44,38]))
