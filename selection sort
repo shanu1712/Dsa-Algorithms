@@ -1,5 +1,5 @@
 ///////////////////
-
+// just a simple fundamental that we will select the minimum value and move it to the starting of the array
 function selectionSort(arr){
   
   for(let i=0;i<arr.length;i++){
